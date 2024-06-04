@@ -1,10 +1,12 @@
 import type { Contracts } from "./.lib/types";
 
 export default {
-  mainnet: {
-    weth: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+  arbitrumOne: {
+    usdc: "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+    arb: "0x912CE59144191C1204E64559FE8253a0e49E6548",
+    weth: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
     uniswap: {
-      positions_nft: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88",
-    },
-  },
+      positions_nft: "0xC36442b4a4522E871399CD717aBDD847Ab11FE88"
+    }
+  }
 } satisfies Contracts;
