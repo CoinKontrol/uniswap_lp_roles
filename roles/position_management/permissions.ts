@@ -1,8 +1,5 @@
 import { c, forAll } from "zodiac-roles-sdk"
-
-const arb = "0x912CE59144191C1204E64559FE8253a0e49E6548";
-const usdc = "0xaf88d065e77c8cC2239327C5EDb3A432268e5831";
-const positionNft = "0xC36442b4a4522E871399CD717aBDD847Ab11FE88"
+import contracts from "../../contracts"
 
 export const oneOf = <T>(values: readonly T[]) => {
   if (values.length === 0) {
@@ -22,10 +19,10 @@ const allowErc20Approve = (
   })
 
 export default [
-  allowErc20Approve([arb, usdc], [positionNft]),
+  allowErc20Approve([contracts.arbitrumOne.arb, contracts.arbitrumOne.usdc], [contracts.arbitrumOne.uniswap.positionNft]),
   allow.arbitrumOne.uniswap.positions_nft.mint({
-    token0: arb,
-    token1: usdc,
+    token0: contracts.arbitrumOne.arb,
+    token1: contracts.arbitrumOne.usdc,
     fee: 500,
     recipient: c.avatar,
   })
