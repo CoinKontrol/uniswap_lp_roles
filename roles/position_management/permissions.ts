@@ -9,5 +9,8 @@ export default [
     token1: contracts.arbitrumOne.usdc,
     fee: 500,
     recipient: c.avatar,
-  })
+  }),
+  allow.arbitrumOne.uniswap.positions_nft.collect({
+    recipient: c.avatar
+  }),
 ] satisfies Permissions;
