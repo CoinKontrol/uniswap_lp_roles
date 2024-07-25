@@ -11,8 +11,7 @@ export default {
     },
     cowswap: {
       orderSigner: "0x23dA9AdE38E4477b23770DeD512fD37b12381FAB",
-      gpv2VaultRelayer: "0xC92E8bdf79f0507f65a392b0ab4667716BFE0110",
-      eAddress: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
+      gpv2VaultRelayer: "0xC92E8bdf79f0507f65a392b0ab4667716BFE0110"
     }
   }
 } satisfies Contracts;

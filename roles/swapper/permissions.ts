@@ -8,7 +8,7 @@ const wbtc = contracts.arbitrumOne.wbtc;
 const weth = contracts.arbitrumOne.weth;
 
 const GPv2VaultRelayer = contracts.arbitrumOne.cowswap.gpv2VaultRelayer;
-const E_ADDRESS = contracts.arbitrumOne.cowswap.eAddress;
+const E_ADDRESS = "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE"
 
 const tokens = [
   arb,

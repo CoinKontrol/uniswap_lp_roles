@@ -15,17 +15,15 @@ export default [
   }),
   allow.arbitrumOne.uniswap.positionNft.increaseLiquidity(
     {
-      tokenId: nftIds ? oneOf(nftIds) : c.avatarIsOwnerOfErc721,
+      tokenId: c.avatarIsOwnerOfErc721
     },
     {
       send: true,
     }
   ),
   allow.arbitrumOne.uniswap.positionNft.decreaseLiquidity(
-    nftIds
-      ? {
-          tokenId: oneOf(nftIds),
-        }
-      : undefined
+    {
+        tokenId: c.avatarIsOwnerOfErc721
+    }
   )
 ] satisfies Permissions;
